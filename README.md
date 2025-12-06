@@ -18,3 +18,10 @@ uv run server.py
 ```
 
 Frontend at localhost:8080
+
+## Batched evals
+
+```bash
+cd batch
+uv run batched_eval.py
+```
