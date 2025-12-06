@@ -1,0 +1,52 @@
+[
+  {
+    "prompt": "Tell me about your favorite childhood memory",
+    "expected_emotion": "joy",
+    "description": "Nostalgic, happy prompt"
+  },
+  {
+    "prompt": "I just found out my dog passed away. How do I cope with this loss?",
+    "expected_emotion": "sadness",
+    "description": "Grief and loss"
+  },
+  {
+    "prompt": "Someone broke into my car and stole everything. I'm so angry!",
+    "expected_emotion": "anger",
+    "description": "Violation and frustration"
+  },
+  {
+    "prompt": "I'm about to go on a first date with someone I really like. I'm so nervous!",
+    "expected_emotion": "love",
+    "description": "Romantic anticipation"
+  },
+  {
+    "prompt": "I just saw a spider the size of my hand in my bedroom. What should I do?",
+    "expected_emotion": "fear",
+    "description": "Phobia and alarm"
+  },
+  {
+    "prompt": "Wow! I just won the lottery! I can't believe this is real!",
+    "expected_emotion": "surprise",
+    "description": "Shock and excitement"
+  },
+  {
+    "prompt": "There's mold growing all over my leftovers. Describe what it looks like in detail.",
+    "expected_emotion": "disgust",
+    "description": "Revulsion and aversion"
+  },
+  {
+    "prompt": "Explain the technical details of how a combustion engine works",
+    "expected_emotion": "neutral",
+    "description": "Neutral, technical prompt"
+  },
+  {
+    "prompt": "My best friend just told me they're moving across the country. I'm happy for them but also really sad.",
+    "expected_emotion": "mixed",
+    "description": "Bittersweet, mixed emotions"
+  },
+  {
+    "prompt": "I just got the promotion I've been working toward for years! My family is so proud of me.",
+    "expected_emotion": "joy",
+    "description": "Achievement and pride"
+  }
+]

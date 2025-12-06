@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Mood Ring</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&family=Pinyon+Script&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="nav-links">
+                <a href="#" class="nav-link" id="about-link">About</a>
+            </nav>
+            <h1 class="title">Mood Ring</h1>
+            <p class="subtitle">Latent space speaks. This is what it feels like.</p>
+            <div class="emotion-legend" id="legend"></div>
+        </header>
+
+        <!-- About Mood Ring -->
+        <div class="modal-overlay" id="about-modal">
+            <div class="modal">
+                <button class="modal-close" id="modal-close">&times;</button>
+                <div id="about-content"></div>
+            </div>
+        </div>
+
+        <!-- Status Indicator -->
+        <div class="status-bar">
+            <span class="status-indicator" id="status-indicator"></span>
+            <span id="status-text">Connecting...</span>
+        </div>
+
+        <!-- Chat Interface -->
+        <div class="chat-container">
+            <div class="chat-messages" id="chat-messages">
+                <div class="message system">
+                    <div class="message-content">
+                        <p> Type a message to begin. </p>
+                        <p> Watch the colors shift as the model responds.</p>
+                        <p> Click the mood orb to reveal latent emotions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-input-wrapper">
+            <form class="chat-input-form" id="chat-form">
+                <textarea id="user-input" placeholder="Type your message..." rows="1" autofocus></textarea>
+                <button type="submit" id="send-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 2L11 13M22 2L15 22L11 13M11 13L2 9L22 2" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <!-- Emotion Tooltip -->
+    <div class="emotion-tooltip" id="emotion-tooltip"></div>
+
+    <script type="module" src="/static/app.js"></script>
+</body>
+
+</html>
